@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	centered={true}
+	title="The world's first tech-enabled bullion liquidity network"
+	subtitle="Real-time vault-verified trading that connects refiners, dealers, and institutional buyers in a trusted marketplace."
+	customers={[
+		{
+			name: "Michael Torres",
+			position: "Senior Bullion Dealer",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-male.webp"
+		},
+		{
+			name: "Sarah Chen",
+			position: "Silver Refinery Operations",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-fema.webp"
+		},
+		{
+			name: "David Richardson",
+			position: "Metals Trading Director",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-male.webp"
+		},
+		{
+			name: "Jennifer Morrison",
+			position: "Vault Storage Manager",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-fema.webp"
+		},
+		{
+			name: "Robert Martinez",
+			position: "Precious Metals Buyer",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-male.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/brinks.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/loomis.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/asahi.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/hsbc.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
