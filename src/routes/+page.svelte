@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
+
+	// Icons
+	import IconShieldCheck from "~icons/lucide/shield-check";
+	import IconZap from "~icons/lucide/zap";
+	import IconActivity from "~icons/lucide/activity";
+	import IconNetwork from "~icons/lucide/network";
+	import IconLock from "~icons/lucide/lock";
+	import IconPlug from "~icons/lucide/plug";
 </script>
 
 <CustomerCardHero
@@ -52,62 +60,97 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Transforming precious metals trading"
+	text="Athanor connects refiners, dealers, and institutional buyers through real-time vault-verified trading in the $1.4 trillion bullion market. We eliminate the opacity and settlement delays that have plagued traditional supply chains, replacing them with instant liquidity and complete transparency. Every transaction is backed by physical assets verified in segregated vaults, giving participants the confidence to trade at scale."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Marcus Thornton",
+			position: "Senior Bullion Dealer",
+			company: "Apex Metals Trading",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Athanor transformed our silver sourcing from a three-day settlement process to real-time execution. The vault-verified transparency gives us complete confidence in every transaction, and we've cut our liquidity costs by 40%.",
+			image: "/generated/image-medium-shot-of-a-professional-male-bulli.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Diana Patel",
+			position: "Refinery Operations Director",
+			company: "Silverstream Refining",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Before Athanor, opaque pricing meant we left money on the table with every sale. Now we see real-time market depth and execute instantly. The platform eliminated counterparty risk through vault verification, giving us the confidence to scale.",
+			image: "/generated/image-medium-shot-of-a-professional-female-ref.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Henrik Bergström",
+			position: "Vault Storage Director",
+			company: "Nordic Secure Vaults",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Connecting our segregated storage infrastructure to Athanor's network unlocked immediate value. Our clients now access instant liquidity on their holdings, and we've increased transaction volume by 60% while maintaining our strict security standards.",
+			image: "/generated/image-medium-shot-of-a-professional-male-vault.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for precision and trust"
+	subtitle="The infrastructure that transforms how precious metals are traded"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Vault-verified transparency",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Every ounce of bullion on our platform is verified in real-time by segregated vault providers, eliminating opacity and establishing trust in every transaction.",
+			icon: IconShieldCheck
 		},
 		{
-			title: "Data Analysis",
+			title: "Instant settlement",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Complete trades in minutes instead of weeks with our tech-enabled settlement infrastructure that delivers the liquidity refiners demand.",
+			icon: IconZap
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Real-time market pricing",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Access live pricing data and transparent price discovery across our entire network, replacing opaque traditional pricing with market clarity.",
+			icon: IconActivity
+		},
+		{
+			title: "Three-tier liquidity network",
+			description:
+				"Connect directly with vault providers, bullion dealers, and silver refiners in a unified marketplace that scales with transaction volume.",
+			icon: IconNetwork
+		},
+		{
+			title: "Institutional-grade security",
+			description:
+				"Enterprise security architecture built for the $1.4T bullion market, ensuring your assets and data remain protected at every level.",
+			icon: IconLock
+		},
+		{
+			title: "Seamless integration",
+			description:
+				"API-first platform that integrates with your existing trading workflows, minimizing disruption while maximizing operational efficiency.",
+			icon: IconPlug
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Join the liquidity revolution"
+	subtitle="Start trading vault-verified bullion today"
+	description="Every day without Athanor is a day of opaque pricing, slow settlement, and missed opportunities. Leading refiners and dealers are already trading with instant liquidity and complete transparency. Join the network transforming the $1.4T bullion market."
+	imageSrc="/generated/image-a-professional-bullion-dealer-stands-con.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Request platform access",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Learn how it works",
+			variant: "secondary"
+		}
+	]}
+/>

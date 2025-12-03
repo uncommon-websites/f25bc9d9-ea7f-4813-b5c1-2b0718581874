@@ -23,7 +23,7 @@ A minimalist teaser for the about page.
 	const teamMember: TeamMember = {
 		name: "Alex Morgan",
 		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		image: "/generated/image-environmental-portrait-of-a-professional.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"I spent years watching refiners lose money to opaque pricing while dealers waited weeks for settlement. The bullion market had the infrastructure of the 1800s serving a trillion-dollar industry. We built Athanor because precision and trust shouldn't be incompatible with speed."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
